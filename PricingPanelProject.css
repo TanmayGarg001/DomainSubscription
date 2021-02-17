@@ -1,0 +1,238 @@
+/*
+Made by - Tanmay Garg.
+Date - 15/7/2020.
+A  Sign-Up or Subscription to Domains using HTML5 and CSS3.  
+A front end project.
+
+Tested on :-
+Internet Explorer,Google Chrome,Opera,Mozilla Firefox,Safari,MicrosoftEdge.
+
+//Scaled for all the platforms :- Pc,Android and iOS.
+
+//Photos Credit :- Google Images.
+
+Makes Working Space(border etc etc reset!)
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: #48cae4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.panel {
+  background-color: #90e0ef;
+  border-radius: 20px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.pricing-plan {
+  border-bottom: 2px solid #ade8f4;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.pricing-header {
+  font-weight: 800;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  color: #4e6da3;
+}
+.pricing-features {
+  margin: 50px 0 30px;
+}
+.pricing-features-item {
+  color: #023e8a;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  padding: 15px 0;
+  border-top: 2px solid #ade8f4;
+  font-size: 1.07em;
+  font-weight: 600;
+}
+.pricing-features-item:last-child {
+  border-bottom: 2px solid #ade8f4;
+}
+.pricing-price {
+  text-transform: uppercase;
+  color: #0077b6;
+  font-weight: 800;
+  display: block;
+  font-size: 2em;
+}
+.pricing-button {
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  border: 2px solid #48cae4;
+  border-radius: 10px;
+  color: #1a8ac7;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin: 25px 0;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #caf0f8;
+  transform: translateY(-0.1em);
+  box-shadow: 0 0.5em 0.5em -0.4em #caf0f8;
+  font-weight: bold;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    display: flex;
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    padding: 25px 50px;
+    border-right: 2px solid #ade8f4;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
